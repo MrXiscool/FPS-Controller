@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 @export var Sensitivity : float = 0.005
 
-@export var Speed : float = 3.0
+@export var Speed : float = 0.75
 @export var Jump_Hieght : float = 4.5
 
 @onready var Neck : Node3D = $Neck
@@ -40,8 +40,6 @@ func _input(event):
 
 func _physics_process(delta):
 	
-	print("D")
-	
 	if Input.is_action_just_pressed("Crouch"):
 		
 		Animator.stop()
@@ -66,7 +64,7 @@ func _physics_process(delta):
 	elif !Input.is_action_pressed("Crouch"):
 		
 		if !Crouch_RayCast.is_colliding():
-			print("S")
+			
 			if Crouched == true:
 				
 				Animator.play_backwards("Crouch")

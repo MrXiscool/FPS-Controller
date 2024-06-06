@@ -1,0 +1,1146 @@
+[gd_scene load_steps=10 format=3 uid="uid://cjbc6hk6hiwsg"]
+
+[ext_resource type="Script" path="res://Maps/Block/Intro/Scripts/Intro.gd" id="1_5wyk0"]
+[ext_resource type="PackedScene" uid="uid://rxnus0ey327m" path="res://Entities/Pod/Scenes/Pod.tscn" id="1_j4qoa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_in6ht"]
+size = Vector3(0.1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yxh3v"]
+albedo_color = Color(0.525101, 0.525101, 0.525101, 1)
+metallic = 0.9
+roughness = 0.11
+
+[sub_resource type="BoxMesh" id="BoxMesh_cq8o7"]
+material = SubResource("StandardMaterial3D_yxh3v")
+size = Vector3(0.1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y24b2"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0)
+
+[sub_resource type="Animation" id="Animation_vginw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Entities/Pod:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1, 9)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Entities/Pod:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.261799, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Prop/CSGBox3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1, 2, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Prop/CSGBox3D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Prop/CSGBox3D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(2, 2, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Prop/CSGBox3D2:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, -0.261799, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Entities/Pod/Camera3D:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.380421, 0)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Entities/Pod/Camera3D:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Entities/Pod/Camera3D:current")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_p2wvy"]
+resource_name = "Intro"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Entities/Pod:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 7.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1, 9), Vector3(0, 1.78814e-07, -0.999998)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Entities/Pod:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 7.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.261799, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Prop/CSGBox3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(1.9, 7.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-1, 2, 0), Vector3(-3, 2, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Prop/CSGBox3D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.9, 7.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.523599, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Prop/CSGBox3D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1.9, 7.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(2, 2, 0), Vector3(3, 2, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Prop/CSGBox3D2:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.9, 7.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -0.261799, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Entities/Pod/Camera3D:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 8.3, 9.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.380421, 0), Vector3(0, 0.380421, 0), Vector3(0, 0.380421, -1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Entities/Pod/Camera3D:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 8.3, 9.7),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Entities/Pod/Camera3D:current")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 9.9, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kjka8"]
+_data = {
+"Intro": SubResource("Animation_p2wvy"),
+"RESET": SubResource("Animation_vginw")
+}
+
+[node name="Intro" type="Node3D"]
+script = ExtResource("1_5wyk0")
+
+[node name="Lights" type="Node3D" parent="."]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(0.866025, -0.0882847, 0.492144, -0.5, -0.152914, 0.852419, 9.93164e-09, -0.984288, -0.176569, -3.01704, 5.97049, -3.25882)
+light_color = Color(1, 0.772549, 0, 1)
+light_energy = 2.157
+shadow_enabled = true
+spot_range = 25.0
+spot_angle = 27.116
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights"]
+transform = Transform3D(0.866025, -0.0882847, 0.492144, -0.5, -0.152914, 0.852419, 9.93164e-09, -0.984288, -0.176569, -15.017, 5.97049, -27.2588)
+light_color = Color(1, 0.772549, 0, 1)
+light_energy = 2.157
+shadow_enabled = true
+spot_range = 25.0
+spot_angle = 27.116
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.42402, -8)
+light_color = Color(0, 0.886275, 1, 1)
+light_energy = 0.154
+shadow_enabled = true
+omni_range = 19.0
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.575984, -1)
+light_color = Color(0, 0.886275, 1, 1)
+light_energy = 0.154
+shadow_enabled = true
+omni_range = 19.0
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.575984, -3)
+light_color = Color(0, 0.886275, 1, 1)
+light_energy = 0.154
+shadow_enabled = true
+omni_range = 19.0
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -16, 0.575984, -8)
+light_color = Color(0, 0.886275, 1, 1)
+light_energy = 0.154
+shadow_enabled = true
+omni_range = 19.0
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0.575984, -8)
+light_color = Color(0, 0.886275, 1, 1)
+light_energy = 0.154
+shadow_enabled = true
+omni_range = 19.0
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -16, 0.575984, -34)
+light_color = Color(0, 0.886275, 1, 1)
+light_energy = 0.154
+shadow_enabled = true
+omni_range = 19.0
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -18, 0.575984, -34)
+light_color = Color(0, 0.886275, 1, 1)
+light_energy = 0.154
+shadow_enabled = true
+omni_range = 19.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Lights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.57598, 1)
+light_energy = 0.309
+shadow_enabled = true
+omni_range = 15.0
+
+[node name="Prop" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, 0)
+use_collision = true
+size = Vector3(3, 7, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop"]
+transform = Transform3D(0.965926, 0, -0.258819, 0, 1, 0, 0.258819, 0, 0.965926, 2, 2, 0)
+use_collision = true
+size = Vector3(3, 7, 1)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 0.989556, -0.144149, 0, 0.144149, 0.989556, -7, 0, -5)
+use_collision = true
+height = 6.0
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 3, -2.5)
+use_collision = true
+size = Vector3(3, 1, 6)
+
+[node name="DeadRobots" type="CSGCombiner3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, -12)
+use_collision = true
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Prop/DeadRobots"]
+radius = 2.0
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="Prop/DeadRobots"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+radius = 4.0
+
+[node name="CSGSphere3D3" type="CSGSphere3D" parent="Prop/DeadRobots"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+radius = 4.0
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Prop"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -18.5, -2, -15.5)
+use_collision = true
+polygon = PackedVector2Array(-2, -0.2, -2, 0, -1, 0.4, 0, 0.8, 1, 1, 1, 0.8, 0, 0.6, -1, 0.2)
+depth = 4.0
+
+[node name="E Exit" type="Label3D" parent="Prop"]
+transform = Transform3D(2.155, 0, 0, 0, 2.155, 0, 0, 0, 2.155, -17, 3, -31)
+text = "E Exit"
+
+[node name="Chairs" type="Node3D" parent="Prop"]
+
+[node name="Chair" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -8, -17)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair2" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, -8, -17)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair2"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair3" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, -8, -17)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair3"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair4" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -8, -17)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair4"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair5" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -8, -17)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair5"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair6" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -8, -19)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair6"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair7" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, -8, -19)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair7"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair8" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, -8, -19)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair8"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair9" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -8, -19)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair9"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair10" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -8, -19)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair10"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair11" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -8, -22)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair11"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair12" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, -8, -22)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair12"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair13" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, -8, -22)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair13"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair14" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -8, -22)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair14"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair15" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -8, -22)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair15"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair16" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -8, -25)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair16"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair17" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, -8, -25)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair17"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair18" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, -8, -25)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair18"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair19" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -8, -25)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair19"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair20" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -8, -25)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair20"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair21" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, -8, -29)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair21"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair22" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, -8, -29)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair22"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair22"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair23" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, -8, -29)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair23"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair23"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair24" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, -8, -29)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair24"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Chair25" type="CSGCombiner3D" parent="Prop/Chairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, -8, -29)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Prop/Chairs/Chair25"]
+size = Vector3(1, 0.05, 1)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Prop/Chairs/Chair25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.716994, 0.5)
+size = Vector3(1, 1.5, 0.05)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Prop/Chairs/Chair25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop/Chairs/Chair25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, 0.5)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop/Chairs/Chair25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.389865, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop/Chairs/Chair25"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.427907, -0.631468, -0.422786)
+size = Vector3(0.05, 1.17163, 0.05)
+
+[node name="Vent Door" type="RigidBody3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.528, 1, -11.485)
+
+[node name="HitBox" type="CollisionShape3D" parent="Prop/Vent Door"]
+shape = SubResource("BoxShape3D_in6ht")
+
+[node name="Mesh" type="MeshInstance3D" parent="Prop/Vent Door"]
+mesh = SubResource("BoxMesh_cq8o7")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 0, -16)
+use_collision = true
+size = Vector3(1, 4, 3)
+material = SubResource("StandardMaterial3D_y24b2")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 0, -16)
+use_collision = true
+size = Vector3(1, 4, 3)
+material = SubResource("StandardMaterial3D_y24b2")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 2.5, -16)
+use_collision = true
+size = Vector3(8, 1, 3)
+material = SubResource("StandardMaterial3D_y24b2")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Prop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, -0.5, -18)
+use_collision = true
+size = Vector3(8, 7, 1)
+material = SubResource("StandardMaterial3D_y24b2")
+
+[node name="Entities" type="Node3D" parent="."]
+
+[node name="Pod" parent="Entities" instance=ExtResource("1_j4qoa")]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1, 9)
+
+[node name="Camera3D" type="Camera3D" parent="Entities/Pod"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.380421, 0)
+current = true
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Map"]
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, -3.76392, -11)
+flip_faces = true
+size = Vector3(37, 20.5278, 55)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -7)
+operation = 2
+size = Vector3(16, 7, 14)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -10.5)
+operation = 2
+size = Vector3(16, 7, 7)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 5)
+operation = 2
+size = Vector3(5, 6, 15)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0.5, -2)
+operation = 2
+size = Vector3(11, 3, 4)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 0.5, -8.5)
+operation = 2
+size = Vector3(4, 3, 17)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -20.5, 1, -11.5)
+operation = 2
+size = Vector3(1, 5, 1)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, 0.5, -33.5)
+operation = 2
+size = Vector3(4, 3, 7)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0.5, -35.5)
+operation = 2
+size = Vector3(23, 3, 3)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, -1.5, -23)
+operation = 2
+size = Vector3(12, 14, 17)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, -7.5, -23)
+size = Vector3(5, 3, 7)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Map/CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5, -7.5, -23)
+operation = 2
+size = Vector3(4, 2, 8)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Map"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_kjka8")
+}
+
+[node name="Notes" type="Node3D" parent="."]
+
+[node name="Sun" type="Label3D" parent="Notes"]
+transform = Transform3D(-1, 0, -8.74228e-08, 8.74228e-08, -4.37114e-08, -1, -3.82137e-15, -1, 4.37114e-08, -3, 5, -3)
+text = "SUN"
+
+[node name="DeadRobots" type="Label3D" parent="Notes"]
+transform = Transform3D(1, 6.18172e-08, -2.56055e-08, -2.56055e-08, 0.707107, 0.707107, 6.18172e-08, -0.707107, 0.707107, 1, -5.6426e-07, -10)
+text = "Dead Robots"
